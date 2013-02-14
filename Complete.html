@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=no,initial-scale=1.0" />
+      <title>:: Money Gram ::</title>
+      <link href="css/MGI_styles.css" rel="stylesheet" type="text/css" />
+      <script src="js/jquery-1.9.1.js"></script>
+      <script>
+         $(document).ready(function(){
+         	$("#history_tab").css("display","none");
+             //  When user clicks on tab, this code will be executed
+             $("#main_tabs_moneygram li").click(function() {
+                 //  First remove class "active" from currently active tab
+         
+         if($(this).index() != 2)
+         displayCoverageBalanceAlert = false;
+         
+         		var selected_tab = $(this).find("a").attr("href");
+         
+         		if(selected_tab != "#")
+         		{
+         		 
+         			$("#main_tabs_moneygram li").removeClass('active');
+         	
+         			//  Now add class "active" to the selected/clicked tab
+         			$(this).addClass("active");
+         	 
+         			//  Hide all tab content
+         			$(".withdraw_tab_content").hide();
+         	 
+         			//  Here we get the href value of the selected tab
+         			
+         			//  Show the selected tab content
+         			$(selected_tab).fadeIn();
+         		}
+         		
+                 //  At the end, we add return false so that the click on the link is not executed
+                 return false;
+             });
+         });
+      </script>
+      <!--[if (gte IE 6)&(lte IE 8)]>
+          <script type="text/javascript" src="js/selectivizr.js"></script>
+          <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	  <![endif]-->
+   </head>
+<body>
+	<div class="main_wrapper">
+<!-- Header/Menu -->
+        <header>
+        <img src="images/mgicorp_mr_logo_main_lg.png"/>
+        <a href="#">Locations</a>
+        </header>
+<!-- Main Content -->
+        <div class="main_content">
+        	<div class="slider_middle">
+            	image slider
+            </div>
+            <div class="withdraw_tabs">
+            	<div class="left_text_plain">
+                	<h2>Money Gram</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, ipsum sed interdum rhoncus, mi quam vulputate libero, sagittis imperdiet nibh ligula in nisi. Morbi sagittis, libero sit amet interdum ullamcorper, orci libero facilisis sem, ac mollis dui elit eget risus. Vivamus dictum quam at libero tempor vitae dignissim ligula sodales. Ut sed nulla et purus fermentum mattis et sed nulla. Pellentesque vel nulla vitae leo viverra rutrum. Praesent a porttitor ipsum. Curabitur consequat tellus eu dui faucibus varius. Mauris sapien tortor, sollicitudin nec elementum ac, sodales a nunc. Cras ullamcorper orci et nunc gravida malesuada. Integer ut quam est. Pellentesque ac enim ut purus viverra volutpat quis vitae urna.
+
+Vivamus dolor nisi, blandit at adipiscing non, pulvinar id metus.</p>	
+                </div>
+                <div class="tabs_withdraw">
+                	<ul id="main_tabs_moneygram">
+                       <li class="active"><a href="#withdraw_tab">Withdraw</a></li>
+                       <li><a href="#history_tab">History</a></li>
+                    </ul>
+                	<div class="withdraw_content_container">
+               <div id="withdraw_tab" class="withdraw_tab_content" style="display: block;">
+                  <div class="review_content">
+                  		<div class="bread_crumb">
+                        	<p>Enter amount</p><span>></span><p>Review</p><span>></span><p>Get confirmation</p>
+                        </div>
+                        <h3>Complete</h3>
+                        <div class="check_terms"><p>Thank You! Your money will be ready to be picked at a MoneyGram location in 10minutes.</p></div>
+                        <ul>
+                        	<li>Sender/Receiver</li>
+                            <li>Jane Smith</li>
+                            <li>Destination Country</li>
+                            <li>United States</li>
+                            <li>Pickup location</li>
+                            <li>Minnesota</li>
+                            <li>Availability</li>
+                            <li>10minutes</li>
+                            <li>Recieve amount</li>
+                            <li><p>214.95</p><span>USD</span></li>
+                            <li>Fee</li>
+                            <li><p>5.95</p><span>USD</span></li>
+                            <li>Total withdraw from account</li>
+                            <li><p>208.95</p><span>USD</span></li>
+                            <li>Exchange Rate</li>
+                            <li><p>1USD</p><span>=</span><p>1USD</p></li>
+                        </ul>
+                  </div>
+                   
+                   <div class="review_withdraw_btn"><button>Done</button></div>
+               </div>
+               <div id="history_tab" class="withdraw_tab_content">
+                  <div class="history_content">fffff</div>
+               </div>
+               </div>
+            </div>
+                </div>
+            </div>
+            
+            <footer>
+        	<p>&copy; MoneyGram</p>
+        </footer>
+        </div>
+		
+    </div>
+</body>
+</html>

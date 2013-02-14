@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+/***** Author Yashwanth Gurrapu@TCS *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	text-decoration: none;
+}
+ul,li{ list-style:none;}
+.clear{ clear:both;}
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size:100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.main_wrapper{ width:72%; height:100%; background:green; margin:auto; display:table; border-right:1px solid #333;border-left:1px solid #333;}
+header{ width:100%; height:12%; background:#4D4540;}
+header img{ width:22%; padding:2% 1%;}
+header a{ float:right; text-decoration:none; color:#fff;}
+.main_content{ width:100%; height:84.6%; background:#C1C1C1; padding-top:2%; padding-bottom:2%;}
+footer{ width:100%; margin:auto; background:#4D4540; padding:0.5% 0; color:#fff;}
+footer p{ font-size:90%;}
+.slider_middle{ width: 96%; margin:auto; background:#FFF; height:30%;}
+.withdraw_tabs{ width:96%; height:70%; margin:auto;padding-top:2%;}
+.left_text_plain{ width:25%; height:88%; border:1px solid #333; float:left; margin-right:2%; padding:1% 2% 2% 2%;}
+.left_text_plain h2{ font-size:160%; font-weight:bold;}
+.left_text_plain p{ font-size:86%; text-align:justify;}
+.tabs_withdraw{ width:68.4%; height:94%; border:1px solid #333; float:left;}
+#main_tabs_moneygram{ width:32%; background:#fff; display:table; height:8%; padding:1% 0;}
+#main_tabs_moneygram li{ width:50%; float:left; text-align:center; font-size:96%;}
+.withdraw_content_container{ width:100%; height:100%;}
+.withdraw_tab_content{ width:100%; height:92%; display:table;}
+.withdraw_content{ width:58%; height:90%;float:left;}
+.bread_crumb{ width:100%; height:auto; display:table; padding:2% 2%;}
+.bread_crumb p:nth-child(1){ font-size:90%; width:24%; float:left;}
+.bread_crumb p:nth-child(3){font-size:90%; width:13%; float:left;}
+.bread_crumb p:nth-child(5){font-size:90%; width:30%; float:left;}
+.bread_crumb span{ font-size:90%;float:left;width:4%;}
+.withdraw_terms{ width:40%; height:90%;float:left;}
+.withdraw_terms_text{ width:92%; margin:auto; border:1px solid #333; border-radius:6px; text-align:justify; padding:3%; margin-top:32%;}
+.withdraw_terms_text p:nth-child(1){ font-size:90%; padding-top:6%; line-height:18px;}
+.withdraw_terms_text p:nth-child(2){ font-size:90%; padding:12% 0 6% 0; line-height:18px;}
+.withdraw_content h3, .review_content h3{ font-size:110%; padding:2% 2%;}
+.withdraw_content ul{ width:94%; margin:auto; font-size:90%;}
+.withdraw_content li:nth-child(1), .withdraw_content li:nth-child(3), .withdraw_content li:nth-child(5), .withdraw_content li:nth-child(7), .withdraw_content li:nth-child(9){ width:60%; float:left;}
+.withdraw_content li:nth-child(2), .withdraw_content li:nth-child(4), .withdraw_content li:nth-child(6), .withdraw_content li:nth-child(8), .withdraw_content li:nth-child(10){ width:40%; float:left;}
+.withdraw_content li:nth-child(2) p, .withdraw_content li:nth-child(10) p, .withdraw_content li:nth-child(8) p{ width:76%; text-align:right; float:left;}
+.withdraw_content li:nth-child(2) span, .withdraw_content li:nth-child(10) span, .withdraw_content li:nth-child(8) span{ width:24%;text-align:right; float:left;}
+.withdraw_content li:nth-child(4) select{ width:100%; line-height:40px !important; padding:20%}
+.withdraw_content li:nth-child(6) input{ width:96%; padding:1% 0;}
+.review_withdraw_btn{ width:100%; height:10%; text-align:right;}
+.review_withdraw_btn button{ padding:1% 4%;}
+
+ .review_content{ padding-left:2%;}
+ .review_content ul{ width:58%; border:1px solid #333;border-radius:6px; padding:2%; display:table;}
+.review_content li:nth-child(1), .review_content li:nth-child(3), .review_content li:nth-child(5), .review_content li:nth-child(7), .review_content li:nth-child(9), .review_content li:nth-child(11), .review_content li:nth-child(13), .review_content li:nth-child(15){ width:60%; float:left;}
+.review_content li:nth-child(2), .review_content li:nth-child(4), .review_content li:nth-child(6), .review_content li:nth-child(8), .review_content li:nth-child(10), .review_content li:nth-child(12), .review_content li:nth-child(14), .review_content li:nth-child(16){ width:40%; float:left;}
+.review_content li:nth-child(10) p, .review_content li:nth-child(12) p, .review_content li:nth-child(14) p{ width:76%; text-align:right; float:left;}
+.review_content li:nth-child(10) span, .review_content li:nth-child(12) span, .review_content li:nth-child(14) span{ width:24%;text-align:right; float:left;}
+.review_content li:nth-child(16) p{ width:34%;float:left;}
+.review_content li:nth-child(16) span{ width:14%; float:left; text-align:center;}
+.check_terms{ width:100%; height:10%; padding:2%;}
+.check_terms input{ float:left;}
+.check_terms p{ font-size:90%; width:94%; float:left;}
+.check_terms span{ display:inline; text-decoration:underline;}
+@media only screen and  (min-width: 320px) and (max-width:800px) {
+.main_wrapper{ width:100%;}
+.slider_middle, .left_text_plain{ display:none;}
+.withdraw_tabs{ height:100%;}
+.tabs_withdraw{ width:100%;}
+}
+@media only screen and (min-width: 320px) and (max-width:600px) and (orientation:landscape) {
+.main_wrapper{ width:100%;}
+
+}
